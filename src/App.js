@@ -54,7 +54,7 @@ class App extends Component {
     this.setState(old => {
       if (old.flagged.find(t => t[0] === row && t[1] === col)) {
         return {
-          flagged: old.flagged.filter(t => t[0] === row && t[1] === col)
+          flagged: old.flagged.filter(t => !(t[0] === row && t[1] === col))
         };
       } else {
         return {

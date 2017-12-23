@@ -29,6 +29,7 @@ body {
   background-color: grey;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
+  cursor: pointer;
 }
 
 .col:first-child {
@@ -37,4 +38,5 @@ body {
 
 .col.exposed {
   background-color: lightgrey;
+  cursor: default;
 }
