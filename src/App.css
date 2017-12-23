@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  text-align: center;
+}
+
+.board {
+  margin: 30px auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.row:first-child .col {
+  border-top: 1px solid black;
+}
+
+.col {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Courier New, Courier, monospace;
+  background-color: grey;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.col:first-child {
+  border-left: 1px solid black;
+}
+
+.col.exposed {
+  background-color: lightgrey;
+}
